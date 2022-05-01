@@ -1,5 +1,9 @@
 @import "_variables.scss";
 
+* {
+    box-sizing: border-box;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -20,10 +24,64 @@ header {
 
 
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    .footer__box1 {
+        flex-basis: 100%;
+        background-color: yellow;
+    }
+
+    .footer__box2 {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .footer__logo {
+            width: 10%;
+            height: auto;
+            flex-grow: 1;
+        }
+
+        .footer__links {
+            flex-grow: 3;
+            background-color: pink;
+
+            .footer__link {
+                text-decoration: none;
+            }
+        }
+
+        .footer__icons {
+            flex-grow: 1;
+            background-color: lightgrey;
+            color: blue;
+        }
+    }
+
+    .footer__box3 {
+        color: white;
+        background-color: $footerBackColor;
+        display: flex;
+        flex-direction: row;
+
+        .footer__logo2 {
+            width: 20%;
+            display: block;
+        }
+    }
+}
+
+/*
 .footer {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 22% 56% 22%;
     grid-row: auto;
 
     .footer__box1 {
@@ -40,22 +98,27 @@ header {
     }
 
     .footer__links {
+        background-color: pink;
         grid-row: 2/3;
         grid-column: 2/3;
         display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        align-items: center;
 
         .footer__link {
             text-decoration: none;
-            padding: 3em;
         }
     }
 
     .footer__icons {
+        color: blue;
         grid-row: 2/3;
         grid-column: 3/4;
-        color: blue;
-        padding: 2em;
-
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .footer__box3 {
@@ -69,7 +132,6 @@ header {
         .footer__logo2 {
             width: 20%;
         }
-
     }
-
 }
+*/
