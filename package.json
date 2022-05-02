@@ -46,6 +46,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.1.3",
     "stylelint": "^14.8.0",
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-scss": "^4.2.0"

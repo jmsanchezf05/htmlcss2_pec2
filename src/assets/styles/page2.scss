@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-around;
+    justify-items: center;
+    column-gap: 1vh;
+    row-gap: 1vh;
+
+}
+
+h1 {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid black;
+    flex-basis: 30%;
+    text-align: center;
+
+}

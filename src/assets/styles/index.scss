@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     margin: 0px;
     padding: 0px;
-    //width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -13,20 +17,77 @@ body {
 }
 
 
-/*
+
+@supports (display:grid) {
+    .uoc-container {
+        display: grid;
+        //  grid-template-columns: 5% 9% 9% 9% 5% 9% 9% 9% 5% 9% 9% 1%;
+        //   grid-template-rows: auto;
+        background-image: url("../images/fotoMusicaCC.jpg");
+        grid-template-areas:
+            " c1 c1 c1 . . . . . . . . ."
+            " . c2 c2 c2 . c3 c3 c3 . c4 c4 c4"
+            " .  .  c5 c5 c5 c5 .  c6 c6 c6 c6 . "
+            " c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7";
+        row-gap: 3em;
+        padding-top: 1em;
+    }
+
+    .caja1 {
+        grid-area: c1;
+        background-color: yellow;
+
+    }
+
+    .caja2 {
+        grid-area: c2;
+        background-color: red;
+    }
+
+    .caja3 {
+        grid-area: c3;
+        background-color: blue;
+    }
+
+    .caja4 {
+        grid-area: c4;
+        background-color: purple;
+    }
+
+    .caja5 {
+        grid-area: c5;
+        background-color: pink;
+    }
+
+    .caja6 {
+        grid-area: c6;
+        background-color: black;
+
+    }
+
+    .caja7 {
+        grid-area: c7;
+        background-color: lightcyan;
+    }
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+/* SIN SOPORTE GRID */
+/*-----------------------------------------------------------------------------------------*/
+
 .uoc-container {
-    //  margin: 0px;
-    //  padding: 0px;
-    //  padding-top: 4em;
+    display: block;
     width: 100%;
     height: 100%;
     background-image: url("../images/fotoMusicaCC.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-*/
-/*
+
+
 .caja1 {
     background-color: yellow;
     margin-left: 5em;
@@ -83,86 +144,4 @@ body {
     margin-left: 5%;
     width: 85%;
     float: left;
-}
-*/
-
-@supports (display:grid) {
-    .uoc-container {
-        display: grid;
-        //  grid-template-columns: 5% 9% 9% 9% 5% 9% 9% 9% 5% 9% 9% 1%;
-        //   grid-template-rows: auto;
-
-        background-image: url("../images/fotoMusicaCC.jpg");
-        grid-template-areas:
-            " c1 c1 c1 . . . . . . . . ."
-            " . c2 c2 c2 . c3 c3 c3 . c4 c4 c4"
-            " .  .  c5 c5 c5 c5 .  c6 c6 c6 c6 . "
-            " c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7";
-        row-gap: 3em;
-    }
-
-    /*
-    .uoc-container {
-        display: grid;
-        grid-template-rows: 20% 20% 20% 20%;
-        grid-template-columns:  5% 9% 9% 9% 5% 9% 9% 9% 5% 9% 9% ;
-        row-gap: 5%;
-        column-gap: 1%;
-        //   border: 1px solid yellow;
-    }
-*/
-    .caja1 {
-        grid-area: c1;
-        //grid-row: 1/2;
-        // grid-column: 1/4;
-        background-color: yellow;
-
-    }
-
-    .caja2 {
-        grid-area: c2;
-        //grid-row: 2/3;
-        //grid-column: 2/5;
-        background-color: red;
-    }
-
-    .caja3 {
-        grid-area: c3;
-        // grid-row: 2/3;
-        //grid-column: 6/9;
-        background-color: blue;
-    }
-
-    .caja4 {
-        grid-area: c4;
-        //grid-row: 2/3;
-        //grid-column: 10/12;
-        background-color: purple;
-    }
-
-
-    .caja5 {
-        grid-area: c5;
-        //grid-row: 3/4;
-        //grid-column: 3/7;
-        background-color: pink;
-    }
-
-    .caja6 {
-        grid-area: c6;
-        // grid-row: 3/4;
-        //grid-column: 8/11;
-        background-color: black;
-
-    }
-
-    .caja7 {
-        grid-area: c7;
-        // grid-row: 4/5;
-        //grid-column: 1/13;
-        background-color: lightcyan;
-
-    }
-
-
 }

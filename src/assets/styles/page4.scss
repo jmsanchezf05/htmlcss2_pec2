@@ -1,0 +1,58 @@
+.container {
+    margin: 0 auto;
+}
+
+
+.espacio,
+.butacas1,
+.butacas2 {
+    float: left;
+
+
+    .butaca {
+        border: 1px solid black;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
+        width: 1vw;
+        height: 3vh;
+        float: left;
+    }
+
+    .espacio {
+        width: 1vw;
+        height: 2vh;
+    }
+}
+
+input {
+    margin-bottom: 1em;
+}
+
+.anfiteatro {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.stopFloating {
+    clear: both;
+}
+
+
+.ok {
+    color: green;
+    font-weight: bold;
+}
+
+.fail {
+    color: red;
+    font-weight: bold;
+}
+
+.seleccionado {
+    background-color: yellow;
+}
+
+.reservado {
+    background-color: red;
+}
