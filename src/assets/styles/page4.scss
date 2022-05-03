@@ -9,6 +9,7 @@
         border-top-right-radius: 25%;
         width: 1vw;
         height: 3vh;
+        margin: 0.5vw;
         float: left;
     }
 
@@ -23,14 +24,22 @@ input {
 }
 
 .anfiteatro {
+    //  float: left;
+    background-color: yellowgreen;
+    width: 20vw;
+    margin: auto;
     padding-top: 2em;
     padding-bottom: 2em;
     text-align: center;
-    margin: 0 auto;
+
 }
 
 .stopFloating {
     clear: both;
+}
+
+form {
+    //text-align: center;
 }
 
 
