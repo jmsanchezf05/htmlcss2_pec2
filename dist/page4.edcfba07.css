@@ -1,0 +1,55 @@
+.espacio,
+.butacas1,
+.butacas2 {
+  float: left;
+}
+.espacio .butaca,
+.butacas1 .butaca,
+.butacas2 .butaca {
+  border: 1px solid black;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  width: 1vw;
+  height: 3vh;
+  float: left;
+}
+.espacio .espacio,
+.butacas1 .espacio,
+.butacas2 .espacio {
+  width: 1vw;
+  height: 2vh;
+}
+input {
+  margin-bottom: 1em;
+}
+.anfiteatro {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  margin: 0 auto;
+}
+.stopFloating {
+  clear: both;
+}
+.ok {
+  color: green;
+  font-weight: bold;
+}
+.fail {
+  color: red;
+  font-weight: bold;
+}
+.seleccionado {
+  background-color: yellow;
+}
+.reservado {
+  background-color: red;
+}
+form {
+  text-align: center;
+  background-color: purple;
+}
+.col-1 {
+  background-color: yellow;
+}
+/*# sourceMappingURL=page4.edcfba07.css.map */

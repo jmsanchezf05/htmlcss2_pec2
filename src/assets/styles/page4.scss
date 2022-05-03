@@ -1,13 +1,7 @@
-.container {
-    margin: 0 auto;
-}
-
-
 .espacio,
 .butacas1,
 .butacas2 {
     float: left;
-
 
     .butaca {
         border: 1px solid black;
@@ -32,11 +26,17 @@ input {
     padding-top: 2em;
     padding-bottom: 2em;
     text-align: center;
+    margin: 0 auto;
 }
 
 .stopFloating {
     clear: both;
 }
+
+
+
+
+
 
 
 .ok {
@@ -55,4 +55,23 @@ input {
 
 .reservado {
     background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+form {
+    text-align: center;
+    background-color: purple;
+
+}
+
+.col-1 {
+    background-color: yellow;
 }

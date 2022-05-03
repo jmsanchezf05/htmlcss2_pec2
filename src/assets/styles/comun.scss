@@ -4,100 +4,25 @@
     box-sizing: border-box;
 }
 
-header {
+.logo {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-
-    .logo {
-        flex-basis: 15%;
-        height: auto;
-    }
-
-    .links {
-        flex-basis: 85%;
-        display: flex;
-        flex-direction: row;
-
-        justify-content: flex-end;
-        align-items: center;
-
-        .hlink {
-            text-decoration: none;
-            padding-right: 2em;
-        }
-
-    }
+    height: auto;
 }
 
+.footer__logo {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
 
+i {
+    margin-top: 1em;
+    color: blue;
+    padding: 0.6em;
+    border: 1px solid blue;
+    border-radius: 50%;
+}
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    .footer__box1 {
-        flex-basis: 100%;
-        background-color: yellow;
-    }
-
-    .footer__box2 {
-        flex-basis: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-
-        .footer__logo {
-            width: 10%;
-            height: auto;
-            flex-grow: 1;
-        }
-
-        .footer__links {
-            flex-grow: 3;
-            background-color: pink;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-            .footer__link {
-                text-decoration: none;
-            }
-        }
-
-        .footer__icons {
-            flex-grow: 1;
-            background-color: lightgrey;
-            color: blue;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-
-            i {
-                padding: 0.6em;
-                border: 1px solid blue;
-                border-radius: 50%;
-            }
-        }
-    }
-
-    .footer__box3 {
-        color: white;
-        background-color: $footerBackColor;
-        display: flex;
-        flex-direction: row;
-
-        .footer__logo2 {
-            width: 20%;
-        }
-
-        .footer__texto {
-            width: 80%;
-        }
-    }
+a {
+    text-decoration: none;
 }

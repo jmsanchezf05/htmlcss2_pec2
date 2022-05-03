@@ -17,89 +17,99 @@
     <include src="./views/header.html"></include>
     <main>
 
-        <form class="container">
-            <form>
-                <div class="datos">
-                    <h2> Introduzca sus datos y elija una butaca:</h2>
+        <form class=".container-fluid">
+            <div class="row">
 
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre">
-                    <span id="nombreError"> </span>
-                    <br>
+                <div class="col-1"> </div>
 
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos">
-                    <span id="apellidosError"> </span>
-                    <br>
+                <div class="col-10">
+                    <form>
+                        <div class="datos">
+                            <h2> Introduzca sus datos y elija una butaca:</h2>
+
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre">
+                            <span id="nombreError"> </span>
+                            <br>
+
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos">
+                            <span id="apellidosError"> </span>
+                            <br>
+                        </div>
+
+
+
+
+                        <div class="anfiteatro">
+                            <div class="butacas1">
+                                <div>
+                                    <div class="butaca" num="1"></div>
+                                    <div class="butaca" num="2"></div>
+                                    <div class="butaca" num="3"></div>
+                                    <div class="butaca" num="4"></div>
+                                </div><br>
+                                <div>
+                                    <div class="butaca" num="5"></div>
+                                    <div class="butaca" num="6"></div>
+                                    <div class="butaca" num="7"></div>
+                                    <div class="butaca" num="8"></div>
+                                </div><br>
+                                <div>
+                                    <div class="butaca" num="9"></div>
+                                    <div class="butaca" num="10"></div>
+                                    <div class="butaca" num="11"></div>
+                                    <div class="butaca" num="12"></div>
+                                </div><br>
+                                <div>
+                                    <div class="butaca" num="13"></div>
+                                    <div class="butaca" num="14"></div>
+                                    <div class="butaca" num="15"></div>
+                                    <div class="butaca" num="16"></div>
+                                </div><br>
+                            </div>
+
+                            <div class="espacio">
+                                <div class="espacio" num="13"></div>
+                                <div class="espacio" num="14"></div>
+                                <div class="espacio" num="15"></div>
+                                <div class="espacio" num="16"></div>
+                            </div>
+
+                            <div class="butacas2">
+                                <div>
+                                    <div class="butaca" num="1"></div>
+                                    <div class="butaca" num="2"></div>
+                                    <div class="butaca" num="3"></div>
+                                    <div class="butaca" num="4"></div>
+                                </div><br>
+                                <div>
+                                    <div class="butaca" num="5"></div>
+                                    <div class="butaca" num="6"></div>
+                                    <div class="butaca" num="7"></div>
+                                    <div class="butaca" num="8"></div>
+                                </div><br>
+                                <div>
+                                    <div class="butaca" num="9"></div>
+                                    <div class="butaca" num="10"></div>
+                                    <div class="butaca" num="11"></div>
+                                    <div class="butaca" num="12"></div>
+                                </div><br>
+                                <div>
+                                    <div class="butaca" num="13"></div>
+                                    <div class="butaca" num="14"></div>
+                                    <div class="butaca" num="15"></div>
+                                    <div class="butaca" num="16"></div>
+                                </div><br>
+                            </div>
+                        </div>
+                        <div class="stopFloating"></div>
+
+                        <button id="boton">Guardar</button>
+                        <br>
+                    </form>
                 </div>
-
-                <div class="anfiteatro">
-                    <div class="butacas1">
-                        <div>
-                            <div class="butaca" num="1"></div>
-                            <div class="butaca" num="2"></div>
-                            <div class="butaca" num="3"></div>
-                            <div class="butaca" num="4"></div>
-                        </div><br>
-                        <div>
-                            <div class="butaca" num="5"></div>
-                            <div class="butaca" num="6"></div>
-                            <div class="butaca" num="7"></div>
-                            <div class="butaca" num="8"></div>
-                        </div><br>
-                        <div>
-                            <div class="butaca" num="9"></div>
-                            <div class="butaca" num="10"></div>
-                            <div class="butaca" num="11"></div>
-                            <div class="butaca" num="12"></div>
-                        </div><br>
-                        <div>
-                            <div class="butaca" num="13"></div>
-                            <div class="butaca" num="14"></div>
-                            <div class="butaca" num="15"></div>
-                            <div class="butaca" num="16"></div>
-                        </div><br>
-                    </div>
-
-                    <div class="espacio">
-                        <div class="espacio" num="13"></div>
-                        <div class="espacio" num="14"></div>
-                        <div class="espacio" num="15"></div>
-                        <div class="espacio" num="16"></div>
-                    </div>
-
-                    <div class="butacas2">
-                        <div>
-                            <div class="butaca" num="1"></div>
-                            <div class="butaca" num="2"></div>
-                            <div class="butaca" num="3"></div>
-                            <div class="butaca" num="4"></div>
-                        </div><br>
-                        <div>
-                            <div class="butaca" num="5"></div>
-                            <div class="butaca" num="6"></div>
-                            <div class="butaca" num="7"></div>
-                            <div class="butaca" num="8"></div>
-                        </div><br>
-                        <div>
-                            <div class="butaca" num="9"></div>
-                            <div class="butaca" num="10"></div>
-                            <div class="butaca" num="11"></div>
-                            <div class="butaca" num="12"></div>
-                        </div><br>
-                        <div>
-                            <div class="butaca" num="13"></div>
-                            <div class="butaca" num="14"></div>
-                            <div class="butaca" num="15"></div>
-                            <div class="butaca" num="16"></div>
-                        </div><br>
-                    </div>
-
-                </div>
-                <div class="stopFloating"></div>
-                <button id="boton">Guardar</button>
-                <br>
-            </form>
+                <div class="col-1"></div>
             </div>
 
     </main>
