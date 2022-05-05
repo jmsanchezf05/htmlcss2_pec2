@@ -1,3 +1,40 @@
+@mixin miCaja() {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0px;
+
+    img {
+        height: auto;
+    }
+
+    h3 {
+        background-color: $color-fondoCaja;
+        color: white;
+        margin-bottom: 0.6em;
+        padding: 0.8em;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 1em;
+    }
+
+    &:hover {
+        border: 1px solid $color-seleccionado;
+        background-color: $color-seleccionadoFondo;
+
+        h3 {
+            color: $color-seleccionado;
+        }
+    }
+
+}
+
+
 main {
     display: flex;
     flex-direction: row;
@@ -21,5 +58,5 @@ h1 {
     flex-basis: 30%;
     min-width: 350px;
     text-align: center;
-
+    //@include miCaja();
 }
