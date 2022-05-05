@@ -19,6 +19,7 @@ body {
 @supports (display: grid) {
   .uoc-container {
     display: grid;
+    grid-template-rows: auto;
     background-image: url("fotoMusicaCC.64c975f6.jpg");
     grid-template-areas: " c1 c1 c1 . . . . . . . . ." " . c2 c2 c2 . c3 c3 c3 . c4 c4 c4" " .  .  c5 c5 c5 c5 .  c6 c6 c6 c6 . " " c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7";
     grid-row-gap: 3em;
