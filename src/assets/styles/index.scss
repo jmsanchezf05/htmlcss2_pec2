@@ -16,7 +16,7 @@ body {
     height: 100%;
 }
 
-
+/*
 
 @supports (display:grid) {
     .uoc-container {
@@ -24,6 +24,7 @@ body {
         //  grid-template-columns: 5% 9% 9% 9% 5% 9% 9% 9% 5% 9% 9% 1%;
         grid-template-rows: auto;
         background-image: url("../images/fotoMusicaCC.jpg");
+        background-size: cover;
         grid-template-areas:
             " c1 c1 c1 . . . . . . . . ."
             " . c2 c2 c2 . c3 c3 c3 . c4 c4 c4"
@@ -31,6 +32,7 @@ body {
             " c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7";
         row-gap: 3em;
         padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     .caja1 {
@@ -69,22 +71,42 @@ body {
         grid-area: c7;
         background-color: lightcyan;
     }
+
+
+    // CON SOPORTE GRID Y PANTALLA PEQUEÑA 
+@media (max-width:576px) {
+    .uoc-container {
+
+        grid-template-areas:
+            " . c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 ."
+            " . c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 ."
+            " . c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 ."
+            " . c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 ."
+            " . c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 ."
+            " . c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 ."
+            " . c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 .";
+        row-gap: 3em;
+        padding-top: 1em;
+    }
+
+}
 }
 
-
-
-
+*/
 /*-----------------------------------------------------------------------------------------*/
 /* SIN SOPORTE GRID */
 /*-----------------------------------------------------------------------------------------*/
 
 .uoc-container {
     display: block;
+    margin: 0px;
+    padding: 1em;
     width: 100%;
     height: 100%;
     background-image: url("../images/fotoMusicaCC.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: blue;
 }
 
 
@@ -139,9 +161,34 @@ body {
 }
 
 .caja7 {
+    height: auto;
     background-color: lightcyan;
     margin-top: 2em;
     margin-left: 5%;
     width: 85%;
     float: left;
+}
+
+@media (max-width:576px) {
+    .uoc-container {
+        height: auto;
+        overflow: auto;
+        background-color: red;
+    }
+
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4,
+    .caja5,
+    .caja6,
+    .caja7 {
+        float: none;
+        width: 96%;
+        padding: 0px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+
 }

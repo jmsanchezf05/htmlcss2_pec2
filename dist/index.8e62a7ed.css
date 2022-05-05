@@ -1,90 +1,116 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
-
 html {
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 100vh;
 }
-
 body {
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 100%;
 }
+/*
 
-@supports (display: grid) {
-  .uoc-container {
-    display: grid;
-    grid-template-rows: auto;
-    background-image: url("fotoMusicaCC.64c975f6.jpg");
-    grid-template-areas: " c1 c1 c1 . . . . . . . . ." " . c2 c2 c2 . c3 c3 c3 . c4 c4 c4" " .  .  c5 c5 c5 c5 .  c6 c6 c6 c6 . " " c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7";
-    grid-row-gap: 3em;
-    row-gap: 3em;
-    padding-top: 1em;
-  }
+@supports (display:grid) {
+    .uoc-container {
+        display: grid;
+        //  grid-template-columns: 5% 9% 9% 9% 5% 9% 9% 9% 5% 9% 9% 1%;
+        grid-template-rows: auto;
+        background-image: url("../images/fotoMusicaCC.jpg");
+        background-size: cover;
+        grid-template-areas:
+            " c1 c1 c1 . . . . . . . . ."
+            " . c2 c2 c2 . c3 c3 c3 . c4 c4 c4"
+            " .  .  c5 c5 c5 c5 .  c6 c6 c6 c6 . "
+            " c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 c7";
+        row-gap: 3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 
-  .caja1 {
-    grid-area: c1;
-    background-color: yellow;
-  }
+    .caja1 {
+        grid-area: c1;
+        background-color: yellow;
 
-  .caja2 {
-    grid-area: c2;
-    background-color: red;
-  }
+    }
 
-  .caja3 {
-    grid-area: c3;
-    background-color: blue;
-  }
+    .caja2 {
+        grid-area: c2;
+        background-color: red;
+    }
 
-  .caja4 {
-    grid-area: c4;
-    background-color: purple;
-  }
+    .caja3 {
+        grid-area: c3;
+        background-color: blue;
+    }
 
-  .caja5 {
-    grid-area: c5;
-    background-color: pink;
-  }
+    .caja4 {
+        grid-area: c4;
+        background-color: purple;
+    }
 
-  .caja6 {
-    grid-area: c6;
-    background-color: black;
-  }
+    .caja5 {
+        grid-area: c5;
+        background-color: pink;
+    }
 
-  .caja7 {
-    grid-area: c7;
-    background-color: lightcyan;
-  }
+    .caja6 {
+        grid-area: c6;
+        background-color: black;
+
+    }
+
+    .caja7 {
+        grid-area: c7;
+        background-color: lightcyan;
+    }
+
+
+    // CON SOPORTE GRID Y PANTALLA PEQUEÑA 
+@media (max-width:576px) {
+    .uoc-container {
+
+        grid-template-areas:
+            " . c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 ."
+            " . c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 ."
+            " . c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 ."
+            " . c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 ."
+            " . c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 ."
+            " . c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 ."
+            " . c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 .";
+        row-gap: 3em;
+        padding-top: 1em;
+    }
+
+}
 }
 
+*/
 /*-----------------------------------------------------------------------------------------*/
-
 /* SIN SOPORTE GRID */
-
 /*-----------------------------------------------------------------------------------------*/
-
 .uoc-container {
   display: block;
+  margin: 0px;
+  padding: 1em;
   width: 100%;
   height: 100%;
   background-image: url("fotoMusicaCC.64c975f6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: blue;
 }
-
 .caja1 {
   background-color: yellow;
   margin-left: 5em;
   width: 20%;
   clear: both;
 }
-
 .caja2 {
   background-color: red;
   margin-top: 2em;
@@ -92,7 +118,6 @@ body {
   width: 20%;
   float: left;
 }
-
 .caja3 {
   background-color: blue;
   margin-top: 2em;
@@ -100,7 +125,6 @@ body {
   width: 20%;
   float: left;
 }
-
 .caja4 {
   background-color: purple;
   margin-top: 2em;
@@ -108,7 +132,6 @@ body {
   width: 20%;
   float: left;
 }
-
 .caja5 {
   background-color: pink;
   margin-top: 2em;
@@ -117,7 +140,6 @@ body {
   float: left;
   clear: left;
 }
-
 .caja6 {
   background-color: black;
   margin-top: 2em;
@@ -125,12 +147,33 @@ body {
   width: 25%;
   float: left;
 }
-
 .caja7 {
+  height: auto;
   background-color: lightcyan;
   margin-top: 2em;
   margin-left: 5%;
   width: 85%;
   float: left;
+}
+@media (max-width: 576px) {
+  .uoc-container {
+    height: auto;
+    overflow: auto;
+    background-color: red;
+  }
+
+  .caja1,
+.caja2,
+.caja3,
+.caja4,
+.caja5,
+.caja6,
+.caja7 {
+    float: none;
+    width: 96%;
+    padding: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
 /*# sourceMappingURL=index.8e62a7ed.css.map */

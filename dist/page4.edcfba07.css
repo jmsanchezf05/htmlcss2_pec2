@@ -41,20 +41,6 @@ input {
   margin-bottom: 2em;
   border: 2px solid red;
 }
-.ok {
-  color: green;
-  font-weight: bold;
-}
-.fail {
-  color: red;
-  font-weight: bold;
-}
-.seleccionado {
-  background-color: yellow;
-}
-.reservado {
-  background-color: red;
-}
 form {
   text-align: center;
 }
