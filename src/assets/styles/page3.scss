@@ -1,14 +1,21 @@
+body {
+    font-family: 'Quicksand';
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.titulo {
+    font-family: 'Oleo Script Swash Caps';
+    font-size: 2em;
+    font-weight: lighter;
+
+}
+
 .card {
     border: 1px solid black;
 }
 
-.aqui {
-    background-color: red;
-}
 
-.cajadeitems {
-    background-color: green;
-}
 
 img {
     width: 100%;

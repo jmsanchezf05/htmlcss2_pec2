@@ -113,7 +113,6 @@ const validaFecha = () => {
     const result = false;
     const textFecha = inputFecha.value;
 
-    console.log("textfecah", textFecha);
 
     if (textFecha !== "") {
         spanFechaError.classList.add("ok");
@@ -124,13 +123,14 @@ const validaFecha = () => {
         spanFechaError.classList.add("fail");
         spanFechaError.classList.remove("ok");
         spanFechaError.innerHTML = "Debe elegir una fecha";
-        return result;
+
     }
+    console.log("fecha", result);
+    return result;
 }
 
 const validaCheck = () => {
     const result = false;
-    console.log("CHECK", inputCheck.checked);
 
     if (inputCheck.checked == true) {
         result = true;
@@ -145,7 +145,6 @@ const salvaDatos = (evento) => {
         const reserva = new reservasClass(inputNombre.value, inputApellidos.value, asientos, inputFecha.value);
         arrayReservas.push(reserva);
         asiento.className += "reservado";
-        console.log("reserva OK", reserva.getAll());
         mostrarDatosEnDocument(reserva);
 
     } else {
@@ -155,10 +154,8 @@ const salvaDatos = (evento) => {
 
 
 const mostrarDatosEnDocument = (reserv) => {
-    console.log("recibo reserva", reserv);
     const puntoInsercion = document.getElementById("datos");
     puntoInsercion.innerHTML = "";
-
 
     let div = document.createElement("div");
     div.classList.add("datosDeReserva");
@@ -178,9 +175,6 @@ const mostrarDatosEnDocument = (reserv) => {
     let text1 = document.createTextNode("Apellidos: " + reserv.getApellidos());
     tag1.appendChild(text1);
     div.appendChild(tag1);
-
-
-    console.log("asientosMostrar:", reserv.getAsientos());
 
     const butacas = reserv.getAsientos();
     if (butacas != null) {

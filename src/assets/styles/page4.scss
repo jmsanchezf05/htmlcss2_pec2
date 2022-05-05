@@ -7,36 +7,42 @@
         border: 1px solid black;
         border-top-left-radius: 25%;
         border-top-right-radius: 25%;
-        width: 1vw;
-        height: 3vh;
+        width: 3vw;
+        height: 4vw;
         margin: 0.5vw;
         float: left;
     }
 
     .espacio {
-        width: 1vw;
-        height: 2vh;
+        width: 2vw;
+        height: 3vw;
     }
 }
 
-input {
-    margin-bottom: 1em;
-}
 
 .anfiteatro {
-    //  float: left;
-    background-color: yellowgreen;
-    width: 20vw;
+    width: 40vw;
     margin: auto;
     padding-top: 2em;
     padding-bottom: 2em;
     text-align: center;
-
 }
 
 .stopFloating {
     clear: both;
 }
+
+
+form {
+    text-align: center;
+    width: 100%;
+}
+
+span {
+    display: block;
+    margin-bottom: 1em;
+}
+
 
 .datosDeReserva {
     margin-left: 20%;
@@ -47,16 +53,22 @@ input {
 
 }
 
-
-
-
-
-form {
-    text-align: center;
-    //background-color: purple;
-
+.btn {
+    margin: 1em;
 }
 
-.col-1 {
-    background-color: yellow;
+
+@media (min-width:576px) {
+    .butaca {
+        width: 2vw;
+        height: 3vw;
+    }
+
+    .anfiteatro {
+        width: 40vw;
+
+    }
+
+
+
 }

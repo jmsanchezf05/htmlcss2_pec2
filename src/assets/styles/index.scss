@@ -16,7 +16,7 @@ body {
     height: 100%;
 }
 
-/*
+
 
 @supports (display:grid) {
     .uoc-container {
@@ -74,25 +74,25 @@ body {
 
 
     // CON SOPORTE GRID Y PANTALLA PEQUEÑA 
-@media (max-width:576px) {
-    .uoc-container {
+    @media (max-width:576px) {
+        .uoc-container {
 
-        grid-template-areas:
-            " . c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 ."
-            " . c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 ."
-            " . c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 ."
-            " . c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 ."
-            " . c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 ."
-            " . c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 ."
-            " . c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 .";
-        row-gap: 3em;
-        padding-top: 1em;
+            grid-template-areas:
+                " . c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 ."
+                " . c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 ."
+                " . c3 c3 c3 c3 c3 c3 c3 c3 c3 c3 ."
+                " . c4 c4 c4 c4 c4 c4 c4 c4 c4 c4 ."
+                " . c5 c5 c5 c5 c5 c5 c5 c5 c5 c5 ."
+                " . c6 c6 c6 c6 c6 c6 c6 c6 c6 c6 ."
+                " . c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 .";
+            row-gap: 3em;
+            padding-top: 1em;
+        }
+
     }
-
-}
 }
 
-*/
+
 /*-----------------------------------------------------------------------------------------*/
 /* SIN SOPORTE GRID */
 /*-----------------------------------------------------------------------------------------*/
