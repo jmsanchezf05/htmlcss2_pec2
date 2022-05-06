@@ -1,0 +1,26 @@
+@import "https://fonts.googleapis.com/css2?family=Koulen&family=Quicksand:wght@300&display=swap";
+body {
+  font-family: "Quicksand";
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.titulo {
+  font-family: "koulen";
+  font-size: 2em;
+  font-weight: lighter;
+  margin-bottom: 1em;
+}
+.texto {
+  margin-bottom: 3em;
+}
+.card {
+  border: 1px solid black;
+}
+img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.carousel-item {
+  min-height: 280px;
+}
+/*# sourceMappingURL=page3.91352dfa.css.map */

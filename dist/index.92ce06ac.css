@@ -1,0 +1,55 @@
+@import "https://fonts.googleapis.com/css2?family=Koulen&family=Quicksand:wght@300&display=swap";
+* {
+  box-sizing: border-box;
+}
+.logo {
+  width: 100%;
+  height: auto;
+}
+.footer {
+  margin-top: 2em;
+}
+.footer__logo {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.icono {
+  margin-top: 1em;
+  color: blue;
+  padding: 0.6em;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+.footer__link,
+.nav-link {
+  font-family: "koulen";
+  font-size: 1.2em;
+  font-weight: lighter;
+  text-decoration: none;
+}
+.footer__link:hover,
+.nav-link:hover {
+  font-size: 1.5em;
+  color: #EEEE66;
+}
+.titulo {
+  font-family: "koulen";
+  font-size: 2em;
+  font-weight: lighter;
+}
+.ok {
+  color: green;
+  font-weight: bold;
+}
+.fail {
+  color: red;
+  font-weight: bold;
+}
+.seleccionado {
+  background-color: yellow;
+}
+.reservado {
+  background-color: red;
+}
+/*# sourceMappingURL=index.92ce06ac.css.map */

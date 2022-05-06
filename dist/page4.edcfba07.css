@@ -1,0 +1,61 @@
+.espacio,
+.butacas1,
+.butacas2 {
+  float: left;
+}
+.espacio .butaca,
+.butacas1 .butaca,
+.butacas2 .butaca {
+  border: 1px solid black;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  width: 3vw;
+  height: 4vw;
+  margin: 0.5vw;
+  float: left;
+}
+.espacio .espacio,
+.butacas1 .espacio,
+.butacas2 .espacio {
+  width: 2vw;
+  height: 3vw;
+}
+.anfiteatro {
+  width: 40vw;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+.stopFloating {
+  clear: both;
+}
+form {
+  text-align: center;
+  width: 100%;
+}
+span {
+  display: block;
+  margin-bottom: 1em;
+}
+.datosDeReserva {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 2px solid red;
+}
+.btn {
+  margin: 1em;
+}
+@media (min-width: 576px) {
+  .butaca {
+    width: 2vw;
+    height: 3vw;
+  }
+
+  .anfiteatro {
+    width: 40vw;
+  }
+}
+/*# sourceMappingURL=page4.edcfba07.css.map */
