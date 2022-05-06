@@ -9,13 +9,17 @@
     height: auto;
 }
 
+.footer {
+    margin-top: 2em;
+}
+
 .footer__logo {
     max-width: 100%;
     width: 100%;
     height: auto;
 }
 
-i {
+.icono {
     margin-top: 1em;
     color: blue;
     padding: 0.6em;
@@ -23,13 +27,25 @@ i {
     border-radius: 50%;
 }
 
-a {
+.footer__link,
+.nav-link {
+    font-family: 'koulen';
+    font-size: 1.2em;
     text-decoration: none;
+
+    &:hover {
+        font-size: 1.5em;
+        color: $color-seleccionado;
+    }
 }
 
 
 
-
+.titulo {
+    font-family: 'koulen';
+    font-size: 2em;
+    font-weight: lighter;
+}
 
 
 

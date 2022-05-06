@@ -1,26 +1,33 @@
+@import "_variables.scss";
+
 @mixin miCaja() {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0px;
+    // border: 1px solid black;
+    border-radius: 2%;
+    text-align: center;
 
-    img {
+    .micaja__img {
+        display: block;
+        width: 100%;
         height: auto;
-    }
-
-    h3 {
-        background-color: $color-fondoCaja;
-        color: white;
-        margin-bottom: 0.6em;
-        padding: 0.8em;
-    }
-
-    li {
-        list-style: none;
+        border-radius: 5%;
         margin-bottom: 1em;
+    }
+
+    .micajaBody__body {
+        .micaja__title {
+            background-color: $color-fondoCaja;
+            color: white;
+            margin-bottom: 0.6em;
+        }
+
+        .micaja__subtitle {
+            background-color: $color-fondoCaja;
+            color: white;
+            margin-bottom: 0.6em;
+            padding: 0.8em;
+        }
+
+        .micaja__text {}
     }
 
     &:hover {
@@ -31,8 +38,15 @@
             color: $color-seleccionado;
         }
     }
-
 }
+
+
+.micaja {
+    @include miCaja();
+    width: 29em;
+    margin-bottom: 2em;
+}
+
 
 
 main {
@@ -49,9 +63,11 @@ main {
 }
 
 h1 {
+
     flex-basis: 100%;
     text-align: center;
 }
+
 
 .card {
     border: 1px solid black;
