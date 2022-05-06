@@ -36,7 +36,7 @@ body {
         padding-top: 1em;
         padding-bottom: 1em;
         min-height: auto;
-        overflow: auto;
+        //   overflow: auto;
     }
 
     .caja1 {
@@ -80,7 +80,6 @@ body {
     // CON SOPORTE GRID Y PANTALLA PEQUEÑA 
     @media (max-width:576px) {
         .uoc-container {
-
             grid-template-areas:
                 " . c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 ."
                 " . c2 c2 c2 c2 c2 c2 c2 c2 c2 c2 ."
@@ -91,9 +90,19 @@ body {
                 " . c7 c7 c7 c7 c7 c7 c7 c7 c7 c7 .";
             row-gap: 3em;
             padding-top: 1em;
-            height: 150%;
+
+        }
+    }
+
+
+    @media (orientation: landscape) {
+        .uoc-container {
+            height: 150vh;
         }
 
+        .caja1 {
+            background-color: purple;
+        }
     }
 }
 
