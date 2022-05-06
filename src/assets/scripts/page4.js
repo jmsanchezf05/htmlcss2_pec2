@@ -125,7 +125,6 @@ const validaFecha = () => {
         spanFechaError.innerHTML = "Debe elegir una fecha";
 
     }
-    console.log("fecha", result);
     return result;
 }
 
